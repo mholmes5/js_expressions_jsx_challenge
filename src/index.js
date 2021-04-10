@@ -5,18 +5,15 @@ import ReactDOM from "react-dom";
 //The paragraphs should say:
 //Created by YOURNAME.
 //Copyright CURRENTYEAR.
-//E.g.
-//Created by Angela Yu.
-//Copyright 2019.
 
 const myName = "Mickey Holmes";
-const date = new Date();
-const CURRENTYEAR = date.getFullYear();
+
+const CURRENTYEAR = new Date().getFullYear();
 
 ReactDOM.render(
   <div>
     <p>Created by {myName}</p>
-    <p>Copyright {CURRENTYEAR}</p>
+    <p>Copyright &copy;{CURRENTYEAR}</p>
   </div>,
   document.getElementById("root")
 );
