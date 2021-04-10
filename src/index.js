@@ -12,3 +12,11 @@ import ReactDOM from "react-dom";
 const myName = "Mickey Holmes";
 const date = new Date();
 const CURRENTYEAR = date.getFullYear();
+
+ReactDOM.render(
+  <div>
+    <p>Created by {myName}</p>
+    <p>Copyright {CURRENTYEAR}</p>
+  </div>,
+  document.getElementById("root")
+);
